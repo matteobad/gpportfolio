@@ -1,4 +1,5 @@
 "use client";
+
 import { ArrowLeft } from "lucide-react";
 import Link from "next/link";
 import React, { useEffect, useRef, useState } from "react";
@@ -33,6 +34,12 @@ export const Navigation: React.FC = () => {
 							className="duration-200 text-zinc-400 hover:text-zinc-100"
 						>
 							Projects
+						</Link>
+						<Link
+							href="/about-me"
+							className="duration-200 text-zinc-400 hover:text-zinc-100"
+						>
+							About me
 						</Link>
 						<Link
 							href="/contact"

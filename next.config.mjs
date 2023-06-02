@@ -14,7 +14,8 @@ const nextConfig = {
         hostname: 'placehold.co',
       },
     ],
-  }
+  },
+  swcMinify: true
 };
 
 export default withContentlayer(nextConfig);

@@ -2,20 +2,19 @@
 
 import React from "react";
 import { allProjects } from "contentlayer/generated";
-import { Navigation } from "../components/nav";
-import { Card } from "../components/card";
+import { Navigation } from "@components/nav";
+import { Card } from "@components/card";
 import { Article } from "./article";
 import {
   Accordion,
   AccordionContent,
   AccordionItem,
   AccordionTrigger,
-} from "@/app/components/ui/accordion"
+} from "@components/ui/accordion"
 
 export const revalidate = 60;
 
 export default function ProjectsPage() {
-
   const sorted = allProjects
     .filter((p) => p.published)
     .sort(
