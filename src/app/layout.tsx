@@ -12,16 +12,15 @@ export const metadata: Metadata = {
     default: "Giordano Prato",
     template: "%s | Giordano Prato",
   },
-  description: "Software engineer at upstash.com and founder of planetfall.io",
+  description: "Level Designer",
   openGraph: {
     title: "Giordano Prato",
-    description:
-      "Software engineer at upstash.com and founder of planetfall.io",
-    url: "https://chronark.com",
-    siteName: "chronark.com",
+    description: "Level Designer",
+    url: "https://gpportfolio.vercel.app",
+    siteName: "gpportfolio",
     images: [
       {
-        url: "https://chronark.com/og.png",
+        url: "https://gpportfolio.vercel.app/og.png",
         width: 1920,
         height: 1080,
       },
@@ -40,14 +39,11 @@ export const metadata: Metadata = {
       "max-snippet": -1,
     },
   },
-  twitter: {
-    title: "Giordano Prato",
-    card: "summary_large_image",
-  },
   icons: {
     shortcut: "/favicon.png",
   },
 };
+
 const inter = Inter({
   subsets: ["latin"],
   variable: "--font-inter",

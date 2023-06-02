@@ -27,7 +27,7 @@ export default function Example() {
     <div className=" bg-gradient-to-tl from-zinc-900/0 via-zinc-900 to-zinc-900/0">
       <Navigation />
       <div className="container mx-auto flex min-h-screen items-center justify-center px-4">
-        <div className="mx-auto mt-32 grid w-full grid-cols-1 gap-8 sm:mt-0 sm:grid-cols-2 lg:gap-16">
+        <div className="mx-auto grid w-full grid-cols-1 gap-8 sm:mt-0 sm:grid-cols-2 lg:gap-16">
           {socials.map((s, idx) => (
             <Card key={idx}>
               <Link
