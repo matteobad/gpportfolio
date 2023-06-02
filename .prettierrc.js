@@ -1,4 +1,8 @@
-/** @type {import("prettier").Config & { [key:string]: any }} */
+/** @typedef  {import("@ianvs/prettier-plugin-sort-imports").PluginConfig} SortImportsConfig*/
+/** @typedef  {import("prettier").Config} PrettierConfig*/
+/** @typedef  {{ tailwindConfig: string }} TailwindConfig*/
+
+/** @type { PrettierConfig | SortImportsConfig | TailwindConfig } */
 const config = {
   arrowParens: "always",
   printWidth: 80,
@@ -12,24 +16,20 @@ const config = {
     "prettier-plugin-tailwindcss",
   ],
   tailwindConfig: "./tailwind.config.js",
+  importOrderTypeScriptVersion: "4.4.0",
   importOrder: [
     "^(react/(.*)$)|^(react$)|^(react-native(.*)$)",
     "^(next/(.*)$)|^(next$)",
     "<THIRD_PARTY_MODULES>",
-    "^@*/(.*)$",
     "",
-    "^~/utils/(.*)$",
-    "^~/components/(.*)$",
-    "^~/styles/(.*)$",
+    "^@components/(.*)$",
+    "^@lib/(.*)$",
+    "^@styles/(.*)$",
+    "^@utils/(.*)$",
+    "",
     "^~/(.*)$",
     "^[./]",
   ],
-  importOrderSeparation: false,
-  importOrderSortSpecifiers: true,
-  importOrderBuiltinModulesToTop: true,
-  importOrderParserPlugins: ["typescript", "jsx", "decorators-legacy"],
-  importOrderMergeDuplicateImports: true,
-  importOrderCombineTypeAndValueImports: true,
 };
 
 module.exports = config;
