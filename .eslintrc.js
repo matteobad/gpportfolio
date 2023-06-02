@@ -39,7 +39,7 @@ const config = {
     "**/.eslintrc.cjs",
     "**/*.config.js",
     "**/*.config.cjs",
-    "packages/config/**",
+    "**/components/ui/**/*.tsx",
     ".next",
     "dist",
     "pnpm-lock.yaml",

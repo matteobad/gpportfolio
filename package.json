@@ -8,8 +8,8 @@
     "build": "next build",
     "start": "next start",
     "format": "prettier --write \"**/*.{js,cjs,mjs,ts,tsx,md,json}\" --ignore-path .gitignore",
-    "lint": "eslint",
-    "lint:fix": "eslint --fix",
+    "lint": "next lint",
+    "lint:fix": "next lint --fix",
     "type-check": "tsc --noEmit"
   },
   "dependencies": {
