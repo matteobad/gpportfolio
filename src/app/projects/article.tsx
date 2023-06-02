@@ -1,5 +1,6 @@
-import type { Project } from "contentlayer/generated";
+import React from "react";
 import Image from "next/image";
+import type { Project } from "contentlayer/generated";
 
 type Props = {
   project: Project;
@@ -7,14 +8,14 @@ type Props = {
 
 export const Article: React.FC<Props> = ({ project }) => {
   return (
-    <article className="p-4 md:p-8 relative h-64 flex flex-col justify-between">
-      <h2 className=" relative z-20 text-xl font-medium duration-1000 lg:text-3xl text-zinc-200 group-hover:text-white font-display">
+    <article className="relative flex h-64 flex-col justify-between p-6 md:p-8">
+      <h2 className="relative z-20 text-left font-display text-xl font-medium text-zinc-200 duration-1000 lg:text-3xl">
         {project.title}
       </h2>
-      <div className="top-0 left-0 w-full h-full absolute">
+      <div className="absolute left-0 top-0 h-full w-full">
+        <div className="relative z-10 h-full w-full bg-gradient-to-r from-gray-700"></div>
         <Image
-          loader={()=>"https://placehold.co/600x400"}
-          src="https://placehold.co/600x400"
+          src={project.image}
           className="object-cover"
           alt="placeholder image"
           fill={true}
