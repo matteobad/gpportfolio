@@ -9,7 +9,7 @@ type Props = {
 export const Article: React.FC<Props> = ({ project }) => {
   return (
     <article className="relative flex h-64 flex-col justify-between p-6 md:p-8">
-      <h2 className="relative z-20 text-left font-display text-xl font-medium text-zinc-200 duration-1000 lg:text-3xl">
+      <h2 className="absolute bottom-6 left-6 z-20 text-left font-display text-xl font-medium text-zinc-200 duration-1000 lg:text-3xl">
         {project.title}
       </h2>
       <div className="absolute left-0 top-0 h-full w-full">

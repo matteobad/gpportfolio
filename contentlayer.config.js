@@ -25,11 +25,11 @@ export const Project = defineDocumentType(() => ({
     published: {
       type: "boolean",
     },
-    title: {
+    category: {
       type: "string",
       required: true,
     },
-    image: {
+    title: {
       type: "string",
       required: true,
     },
@@ -37,14 +37,16 @@ export const Project = defineDocumentType(() => ({
       type: "string",
       required: true,
     },
+    image: {
+      type: "string",
+      required: true,
+    },
     date: {
       type: "date",
     },
-    url: {
+    video: {
       type: "string",
-    },
-    repository: {
-      type: "string",
+      required: true
     },
   },
   computedFields,
