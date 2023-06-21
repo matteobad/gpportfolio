@@ -34,17 +34,17 @@ export default function Example() {
     <div className="bg-gradient-to-tl from-zinc-900/0 via-zinc-900 to-zinc-900/0">
       <Navigation />
       <div className="container mx-auto flex min-h-screen items-center justify-center px-6">
-        <div className="mx-auto grid w-full max-w-xl grid-cols-1 gap-8 sm:mt-0 lg:gap-16">
+        <div className="mx-auto mt-10 grid w-full max-w-3xl grid-cols-1 gap-8 lg:gap-16">
           <Card>
             <div className="flex flex-col gap-12 p-8">
               <div className="relative flex flex-col items-center justify-center gap-8">
-                <div className="h-[120px] w-[120px] overflow-hidden rounded-full">
+                <div className="h-[180px] w-[180px] overflow-hidden rounded-full">
                   <Image
                     src="/images/user.jpeg"
                     className="object-cover"
                     alt="placeholder image"
-                    width={120}
-                    height={120}
+                    width={180}
+                    height={180}
                   />
                 </div>
                 <h2 className="text-3xl font-bold tracking-tight text-zinc-100 sm:text-4xl">
