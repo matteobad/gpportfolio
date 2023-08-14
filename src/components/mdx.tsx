@@ -66,7 +66,7 @@ const components = {
   a: ({ className, ...props }) => (
     <Link
       className={clsx(
-        "font-medium text-zinc-900 underline underline-offset-4",
+        "font-medium text-zinc-100 underline underline-offset-4",
         className,
       )}
       {...props}
@@ -104,9 +104,8 @@ const components = {
     alt,
     ...props
   }: React.ImgHTMLAttributes<HTMLImageElement>) => (
-    // eslint-disable-next-line @next/next/no-img-element
     <img
-      className={clsx("rounded-md border border-zinc-200", className)}
+      className={clsx("m-auto rounded-md border border-zinc-200", className)}
       alt={alt}
       {...props}
     />
