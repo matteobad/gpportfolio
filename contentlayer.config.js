@@ -48,6 +48,10 @@ export const Project = defineDocumentType(() => ({
       type: "string",
       required: true
     },
+    build: {
+      type: "string",
+      required: false
+    }
   },
   computedFields,
 }));
