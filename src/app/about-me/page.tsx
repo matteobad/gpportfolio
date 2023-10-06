@@ -58,12 +58,12 @@ export default function Example() {
                 <p className="text-zinc-400">
                   <span className="text-lg font-bold">Hello,</span>
                   <br />
-                  welcome to my portfolio where i’ve been collecting my main
+                  welcome to my portfolio where I’ve been collecting my main
                   works done during my last 2+ years of academy. I decided to
-                  take the path of the level designer because i needed to
-                  express my fantasies and being able to create worlds that i
-                  would play in the first place. I’m really proud of how i’m
-                  growing through the years and i recognise how much i can still
+                  take the path of the level designer because I needed to
+                  express my fantasies and being able to create worlds that I
+                  would play in the first place. I’m really proud of how I’m
+                  growing through the years and I recognise how much I can still
                   learn and for that my key sentence will always be “Team work
                   is the dream work”.
                   <br />
